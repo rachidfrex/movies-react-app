@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  gap: 20px;
+  position: relative;
+  font-family: 'Poppins';
+  background-color: rgb(212, 235, 255);
+  color: aliceblue;
+  
+}
+nav{
+  z-index: 1000;
+  margin: 0 auto ;
+  
+  width: 75%;
+  position: fixed;
+  top: 0;
+  left: 12%;
+
+  
+ 
+  
+}
+ ul{
+  list-style-type: none;
+  background-color: rgb(187, 221, 250);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+ 
+
+
+}
+li{
+  display: inline;
+  padding: 10px;
+  font-family: 'Poppins';
+
+  
+
+}
+.main{
+  margin-top: 100px;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+.main .content{
+  border-radius: 10px;
+}
+.main .main-image{
+
+  margin-top: 10px;
+  border: 1px solid black;
+ 
+  
+}
+.main  img{
+  border-radius: 10px ;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+  
+}
+.dait{
+  border: 2px solid;
+  position: absolute;
+  background-color: aliceblue;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 10px ;
+  display: flex;
+  gap: 20px;
+  width: 95%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+  
+}.dait p{
+  text-align: center;
+  width: 100%;
+  
+}
+.dait img{
+  border-radius: 10px ;
+  
+}
+.dait .card2 {
+  width: 75%;
+  text-align: start;
+}
+.dait .card2 p{
+  text-align: justify;
+  
+}
+.stars{
+  color:rgb(159, 0, 0) ;
+  width: 50px;
+  
+}
+:link{
+  text-decoration: none;
+  color: black;
+}
+/* Rating item */
+:root {
+  --rating-size: 70px;
+  --bar-size: 8px;
+  --background-color: #e7f2fa;
+  --rating-color-default: #2980b9;
+  --rating-color-background:#1d81479a;
+  --rating-color-good: #27ae60;
+  --rating-color-meh: #25241f;
+  --rating-color-bad: #e74c3c;
+}
+
+/* Rating item */
+.rating {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  overflow: hidden;
+  background: var( --rating-color-background);
+  color: var(--rating-color-default);
+  width: var(--rating-size);
+  height: var(--rating-size);
+  /* Basic style for the text */
+  font-size: calc(var(--rating-size) / 3);
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+/* Rating circle content */
+.rating span {
+  margin: 10px;
+ 
+  position: relative;
+  display: flex;
+  font-weight: bold;
+  z-index: 2;
+  
+  
+  
+  
+}
+
+.rating span small {
+  
+  font-size: 0.5em;
+  font-weight: 900;
+  align-self: center;
+  
+  
+}
+
+/* Bar mask, creates an inner circle with the same color as thee background */
+.rating::after {
+  
+  content: "";
+  position: absolute;
+  inset: var(--bar-size);
+  background: var(--background-color);
+  border-radius: inherit;
+  z-index: 1;
+}
+
+/* Bar background */
+.rating::before {
+  content: "";
+  position: absolute;
+  inset: var(--bar-size);
+  border-radius: inherit;
+  box-shadow: 0 0 0 1rem var(--rating-color-background);
+  z-index: -1;
+}
+
+/* Classes to give different colors to ratings, based on their score */
+.rating.good {
+
+  background: var(--rating-color-good);
+  color: var(--rating-color-good);
+}
+
+.rating.meh {
+  background: var(--rating-color-meh);
+  color: var(--rating-color-meh);
+}
+
+.rating.bad {
+  background: var(--rating-color-bad);
+  color: var(--rating-color-bad);
+}
+
+  
